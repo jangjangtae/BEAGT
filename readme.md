@@ -29,10 +29,30 @@ BEAGT monitors recent reward progress. When the reward change falls below a stag
 
 The goal is not simply to maximize task reward, but to recover exploration when the policy becomes overly concentrated on already-known trajectories.
 
+![BEAGT exploration-stagnation framework](assets/beagt_framework.webp)
+
+*BEAGT monitors recent reward progress and adjusts the exploration coefficient when stagnation is detected.*
+
+## Results
+
+### CartPole
+
+![CartPole bug detection distribution](assets/beagt_cartpole_results.webp)
+
+### MsPacman
+
+![MsPacman bug detection distribution](assets/beagt_mspacman_results.webp)
+
+The evaluation compares BEAGT with RELINE and a random baseline using fixed policies after training and repeated test episodes.
+
 ## Repository Structure
 
 ```text
 BEAGT/
+├── assets/
+│   ├── beagt_framework.webp
+│   ├── beagt_cartpole_results.webp
+│   └── beagt_mspacman_results.webp
 ├── CartPole/
 │   ├── BEAGT_train.py
 │   ├── RELINE_train.py
