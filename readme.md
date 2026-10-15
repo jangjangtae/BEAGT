@@ -29,7 +29,7 @@ BEAGT monitors recent reward progress. When the reward change falls below a stag
 
 The goal is not simply to maximize task reward, but to recover exploration when the policy becomes overly concentrated on already-known trajectories.
 
-![BEAGT exploration-stagnation framework](assets/beagt_framework.webp)
+![BEAGT exploration-stagnation framework](assets/beagt_framework.png)
 
 *BEAGT framework: recent rewards are monitored to detect stagnation, and an exploration controller temporarily increases the exploration parameter.*
 
@@ -37,13 +37,13 @@ The goal is not simply to maximize task reward, but to recover exploration when 
 
 ### CartPole
 
-![CartPole bug detection distribution](assets/beagt_cartpole_results.webp)
+![CartPole bug detection distribution](assets/beagt_cartpole_results.png)
 
 *Distribution of the number of faults found per test episode in CartPole (1,000 test episodes; methods: BEAGT, RELINE, Random).*
 
 ### MsPacman
 
-![MsPacman bug detection distribution](assets/beagt_mspacman_results.webp)
+![MsPacman bug detection distribution](assets/beagt_mspacman_results.png)
 
 *Distribution of the number of faults found per test episode in MsPacman (1,000 test episodes; methods: BEAGT, RELINE, Random).*
 
