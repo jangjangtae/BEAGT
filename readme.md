@@ -54,9 +54,9 @@ The experiments compare BEAGT with RELINE and a random-action baseline. After tr
 ```text
 BEAGT/
 ├── assets/
-│   ├── beagt_framework.webp
-│   ├── beagt_cartpole_results.webp
-│   └── beagt_mspacman_results.webp
+│   ├── beagt_framework.png
+│   ├── beagt_cartpole_results.png
+│   └── beagt_mspacman_results.png
 ├── CartPole/
 │   ├── BEAGT_train.py
 │   ├── RELINE_train.py
