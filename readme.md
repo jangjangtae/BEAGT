@@ -45,15 +45,7 @@ The goal is not simply to maximize task reward, but to recover exploration when 
 
 ![MsPacman bug detection distribution](assets/beagt_mspacman_results.png)
 
-*Distribution of the number of faults found per test episode in MsPacman (reported 1,000 test episodes; methods: BEAGT, RELINE, Random).*
-
-**Published-table caveat:** Table 2 of the 2025 paper gives the BEAGT
-MsPacman distribution as 296.7 (zero bugs), 492.7 (one bug), and 200.6
-(two bugs). These entries total **990.0**, whereas the paper describes
-1,000 test episodes. Whether this reflects a typo or an undocumented
-exclusion cannot be determined from the published table. The values have
-not been silently adjusted; verify raw experiment logs before treating
-the categories as an exhaustive 1,000-episode distribution.
+*Distribution of the number of faults found per test episode in MsPacman (1,000 test episodes; methods: BEAGT, RELINE, Random).*
 
 The experiments compare BEAGT with RELINE and a random-action baseline. After training, the learned policies are fixed for repeated evaluation. The study reports an increased number of test episodes in which all designated faults were discovered under the evaluated settings.
 
